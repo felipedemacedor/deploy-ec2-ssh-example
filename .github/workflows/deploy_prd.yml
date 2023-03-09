@@ -22,4 +22,4 @@ jobs:
           TARGET: "/home/ubuntu/DEPLOY_VISIONBACK_PRD"
           SCRIPT_BEFORE: ls
           #SCRIPT_AFTER: exec ~/DEPLOY_SCRIPTS/docker_build.sh
-          SCRIPT_AFTER: docker-compose up -f ~/VisionBackBuild/docker-compose.yml --build -d
+          SCRIPT_AFTER: cd ~/VisionBackBuild && docker-compose up --build -d
