@@ -20,3 +20,5 @@ jobs:
           REMOTE_HOST: "3.232.236.192"
           REMOTE_USER: "ubuntu"
           TARGET: "/home/ubuntu/DEPLOY_VISIONBACK_PRD"
+          SCRIPT_BEFORE: ls
+          SCRIPT_AFTER: ../DEPLOY_SCRIPTS/docker_build.sh
